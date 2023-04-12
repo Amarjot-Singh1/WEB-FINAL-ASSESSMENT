@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="./images/carrom2.jpg" alt="logo">
+        <a href="./index.html"> HOME </a>|<a href="./info.html"> INFO </a>|<a
+            href="./review.html">  REVIEWS </a> | <a href="about.html"> ABOUT </a>   
+    </header>
+    <div id="container">
+
+    </div>
+    <div>
+        <h2> REVIEW FORM </h2>
+        <div>
+        <form id="review-form" class="review-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required/>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required/>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select rating...</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" required></textarea>
+          <input type="button" value="Create" id="button">
+          </form>
+        </div>
+    </div>
+    <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
